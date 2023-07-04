@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <title>Amino translate</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+   </head>
+
+   <body>
+    <header id="banner">
+        <h1>Amino translate</h1>
+        <p>
+            Small description of the website, Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </header>
+
+    <div id="convertorField">
+        <select id="inputType" name="acid_inputType">
+            <option value = "0">Noms</option>
+            <option value = "1">Une lettre</option>
+            <option value = "2">Trois lettres</option>
+        </select>
+
+        <select id="outputType" name="acid_outputType">
+            <option value = "0">Noms</option>
+            <option value = "1">Une lettre</option>
+            <option value = "2">Trois lettres</option>
+        </select>
+
+        <p id="input" spellcheck="false">
+            <textarea id="inputText" name="acid_input" rows="1" cols="2"> </textarea>
+            <label for="acid_input">Entrez vos acides aminé ici</label>
+        </p>
+
+        <p id="output" spellcheck="false">
+            <textarea id="outputText" name="acid_output" readonly> </textarea>
+            <label for="acid_output">Traduction</label>
+        </p>
+
+        <p id="errorField" hidden>Le texte entrer contient une/des erreur(s), affichée(s) en gras</p>
+
+        <button id="translate">Traduire les acides</button>
+    </div>
+
+    <footer id="end">
+        <a href="html/about.html">About</a>
+    </footer>
+   </body>
+
+   <script src="js/main.js"></script>
+</html>

@@ -22,26 +22,30 @@
     </header>
 
     <div id="convertorField">
-        <select id="inputType" name="acid_inputType">
-            <option value = "0">Noms</option>
-            <option value = "1">Une lettre</option>
-            <option value = "2">Trois lettres</option>
-        </select>
+        <div class="selectContainer" id="inputContainer">
+            <select id="inputType" name="acid_inputType">
+                <option value = "0">Noms</option>
+                <option value = "1">Une lettre</option>
+                <option value = "2">Trois lettres</option>
+            </select>
+        </div>
 
-        <select id="outputType" name="acid_outputType">
-            <option value = "0">Noms</option>
-            <option value = "1">Une lettre</option>
-            <option value = "2">Trois lettres</option>
-        </select>
+        <div class="selectContainer" id="outputContainer">
+            <select id="outputType" name="acid_outputType">
+                <option value = "0">Noms</option>
+                <option value = "1">Une lettre</option>
+                <option value = "2">Trois lettres</option>
+            </select>
+        </div>
 
         <p id="input" spellcheck="false">
             <textarea id="inputText" name="acid_input" rows="1" cols="2"> </textarea>
-            <label for="acid_input">Entrez vos acides aminé ici</label>
+            <label for="acid_input" hidden>Entrez vos acides aminé ici</label>
         </p>
 
         <p id="output" spellcheck="false">
             <textarea id="outputText" name="acid_output" readonly> </textarea>
-            <label for="acid_output">Traduction</label>
+            <label for="acid_output" hidden>Traduction</label>
         </p>
 
         <p id="errorField" hidden>Le texte entrer contient une/des erreur(s), affichée(s) en gras</p>
@@ -50,7 +54,7 @@
     </div>
 
     <footer id="end">
-        <a href="html/about.html">About</a>
+        <a href="html/about.html">A propos</a>
     </footer>
    </body>
 

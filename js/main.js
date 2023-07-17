@@ -28,7 +28,7 @@ function load() {
 
     btn_translate.addEventListener("click", translateAcid);
 
-    baseTextAreaSize = txt_input.offsetHeight;
+    baseTextAreaSize = txt_input.offsetHeight * 2;
     updateTextSize();
     document.addEventListener("keydown", updateTextSize);
     txt_input.addEventListener("input", updateTextSize);
